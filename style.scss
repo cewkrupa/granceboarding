@@ -48,8 +48,6 @@ html {
 	grid-template-rows: 2fr 1fr;
 
 	h1 {
-		// grid-row-start: 1;
-		// grid-row-end: span 2;
 		grid-row: 1;
 		width: 100%;
 		text-align: center;
@@ -84,7 +82,6 @@ html {
 			@include text-shadow($color-2);
 		}
 	}
-
 }
 
 @media screen and (max-width: 1280px) {
