@@ -41,11 +41,11 @@ html {
     padding-right: 15%;
     grid-row: 2; }
   .section:nth-child(odd) p {
-    background: rgba(26, 145, 217, 0.6); }
+    background: rgba(26, 145, 217, 0.75); }
   .section:nth-child(odd) h1 {
     text-shadow: -1px -1px 0 #1a91d9, 1px -1px 0 #1a91d9, -1px 1px 0 #1a91d9, 1px 1px 0 #1a91d9; }
   .section:nth-child(even) p {
-    background: rgba(231, 18, 139, 0.6); }
+    background: rgba(231, 18, 139, 0.75); }
   .section:nth-child(even) h1 {
     text-shadow: -1px -1px 0 #e7128b, 1px -1px 0 #e7128b, -1px 1px 0 #e7128b, 1px 1px 0 #e7128b; }
 
