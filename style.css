@@ -20,16 +20,35 @@ html {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex; }
-  .section span {
-    align-self: flex-end;
+  display: grid;
+  grid-template-rows: 2fr 1fr; }
+  .section h1 {
+    grid-row: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 72pt;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
+  .section p {
     padding-bottom: 1em;
     padding-top: 1em;
+    margin-bottom: 0;
     padding-left: 20%;
-    padding-right: 20%; }
-  .section:nth-child(odd) span {
+    padding-right: 20%;
+    grid-row: 2; }
+  .section:nth-child(odd) p {
     background: rgba(26, 145, 217, 0.6); }
-  .section:nth-child(even) span {
+  .section:nth-child(even) p {
     background: rgba(231, 18, 139, 0.6); }
+
+@media screen and (max-width: 1280px) {
+  .section h1 {
+    font-size: 48pt; } }
+@media screen and (max-width: 690px) {
+  .section h1 {
+    font-size: 32pt;
+    vertical-align: middle; }
+  .section p {
+    padding-left: 0.5em;
+    padding-right: 0.5em; } }
 
 /*# sourceMappingURL=style.css.map */
