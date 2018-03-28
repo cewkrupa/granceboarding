@@ -1,0 +1,53 @@
+$color-1: #1a91d9;
+$color-2: #e7128b;
+$color-3: #71EEB8;
+
+@mixin center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Bangers', cursive;
+	margin-bottom: 0;
+	padding-bottom: 1em;
+}
+
+body {
+	margin: 0!important;
+}
+
+html {
+	font-family: 'Signika', sans-serif;
+}
+
+.title {
+	@include center;
+	background: $color-3;
+}
+
+.section {
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	
+	span {
+		align-self: flex-end;
+		padding-bottom: 1em;
+		padding-top: 1em;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+
+	&:nth-child(odd) span {
+		background: rgba( $color-1, .6);
+	}
+
+	&:nth-child(even) span {
+		background: rgba($color-2, .6);
+	}
+
+}
