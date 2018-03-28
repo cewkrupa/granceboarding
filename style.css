@@ -1,19 +1,25 @@
 h1 {
   font-family: 'Bangers', cursive;
   margin-bottom: 0;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  font-weight: 100; }
 
 body {
   margin: 0 !important; }
 
 html {
-  font-family: 'Signika', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 .title {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background: #71EEB8; }
+  background: #71EEB8;
+  margin-bottom: 0;
+  padding-bottom: 1em; }
+  .title p {
+    padding-right: 9em;
+    padding-left: 9em; }
 
 .section {
   width: 100%;
@@ -26,19 +32,22 @@ html {
     grid-row: 1;
     width: 100%;
     text-align: center;
-    font-size: 72pt;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
+    font-size: 72pt; }
   .section p {
     padding-bottom: 1em;
     padding-top: 1em;
     margin-bottom: 0;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     grid-row: 2; }
   .section:nth-child(odd) p {
     background: rgba(26, 145, 217, 0.6); }
+  .section:nth-child(odd) h1 {
+    text-shadow: -1px -1px 0 #1a91d9, 1px -1px 0 #1a91d9, -1px 1px 0 #1a91d9, 1px 1px 0 #1a91d9; }
   .section:nth-child(even) p {
     background: rgba(231, 18, 139, 0.6); }
+  .section:nth-child(even) h1 {
+    text-shadow: -1px -1px 0 #e7128b, 1px -1px 0 #e7128b, -1px 1px 0 #e7128b, 1px 1px 0 #e7128b; }
 
 @media screen and (max-width: 1280px) {
   .section h1 {

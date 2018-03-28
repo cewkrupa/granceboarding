@@ -8,10 +8,15 @@ $color-3: #71EEB8;
 	text-align: center;
 }
 
+@mixin text-shadow ($color) {
+	text-shadow: -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color, 1px 1px 0 $color;
+}
+
 h1 {
 	font-family: 'Bangers', cursive;
 	margin-bottom: 0;
 	padding-bottom: 1em;
+	font-weight: 100;
 }
 
 body {
@@ -19,12 +24,19 @@ body {
 }
 
 html {
-	font-family: 'Signika', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .title {
 	@include center;
 	background: $color-3;
+	margin-bottom: 0;
+	padding-bottom: 1em;
+
+	p {
+		padding-right: 9em;
+		padding-left: 9em;	
+	}
 }
 
 .section {
@@ -42,24 +54,35 @@ html {
 		width: 100%;
 		text-align: center;
 		font-size: 72pt;
-		text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 	}
 	
 	p {
 		padding-bottom: 1em;
 		padding-top: 1em;
 		margin-bottom: 0;
-		padding-left: 20%;
-		padding-right: 20%;
+		padding-left: 15%;
+		padding-right: 15%;
 		grid-row: 2;
 	}
 
-	&:nth-child(odd) p {
-		background: rgba( $color-1, .6);
+	&:nth-child(odd) {
+		p {
+			background: rgba( $color-1, .6);
+		}
+		h1 {
+			@include text-shadow($color-1);
+		}
+
 	}
 
-	&:nth-child(even) p {
-		background: rgba($color-2, .6);
+	&:nth-child(even) {
+		p {
+			background: rgba($color-2, .6);
+		}
+
+		h1 {
+			@include text-shadow($color-2);
+		}
 	}
 
 }
