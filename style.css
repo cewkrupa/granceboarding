@@ -53,6 +53,10 @@ html {
   .section h1 {
     font-size: 48pt; } }
 @media screen and (max-width: 690px) {
+  .title p {
+    padding-right: 0.5em;
+    padding-left: 0.5em; }
+
   .section h1 {
     font-size: 32pt;
     vertical-align: middle; }
